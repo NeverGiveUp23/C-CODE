@@ -7,6 +7,13 @@ void swap(int *pa, int *pb) {
   *pa = *pb;
   *pb = t;
 }
+
+void swapAgain(char *ca, char *cb) {
+  char f = *ca;
+  *ca = *cb;
+  *cb = f;
+}
+
 // when needing to call the object or point to that object - you can use the &
 // sign. this is the address-of operator. This genetates the pointer to its
 // operand. this now accepts pointers of type int as params.
@@ -17,6 +24,12 @@ int main(void) {
 
   swap(&a, &b);
   printf("a = %d, b = %d\n", a, b);
+
+  char c = 'l';
+  char d = 'p';
+
+  swapAgain(&c, &d);
+  printf("c = %c, d = %c", c, d);
 
   return 0;
 }
