@@ -10,4 +10,6 @@ add_executable(ccode
         scope/counter.c
         arrays/array.c
         operators/bitwise.c
-        mortgageCalc/mortgage.c)
+        mortgageCalc/mortgage.c
+        loops/loops.c
+        CBOOK/section1.c)

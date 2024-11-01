@@ -91,6 +91,18 @@ build CMakeFiles/ccode.dir/mortgageCalc/mortgage.c.o: C_COMPILER__ccode_unscanne
   OBJECT_DIR = CMakeFiles/ccode.dir
   OBJECT_FILE_DIR = CMakeFiles/ccode.dir/mortgageCalc
 
+build CMakeFiles/ccode.dir/loops/loops.c.o: C_COMPILER__ccode_unscanned_Debug /Users/felix/Desktop/ccode/loops/loops.c || cmake_object_order_depends_target_ccode
+  DEP_FILE = CMakeFiles/ccode.dir/loops/loops.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ccode.dir
+  OBJECT_FILE_DIR = CMakeFiles/ccode.dir/loops
+
+build CMakeFiles/ccode.dir/CBOOK/section1.c.o: C_COMPILER__ccode_unscanned_Debug /Users/felix/Desktop/ccode/CBOOK/section1.c || cmake_object_order_depends_target_ccode
+  DEP_FILE = CMakeFiles/ccode.dir/CBOOK/section1.c.o.d
+  FLAGS = -g -std=gnu11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/ccode.dir
+  OBJECT_FILE_DIR = CMakeFiles/ccode.dir/CBOOK
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ccode
@@ -99,7 +111,7 @@ build CMakeFiles/ccode.dir/mortgageCalc/mortgage.c.o: C_COMPILER__ccode_unscanne
 #############################################
 # Link the executable ccode
 
-build ccode: C_EXECUTABLE_LINKER__ccode_Debug CMakeFiles/ccode.dir/enums/enum.c.o CMakeFiles/ccode.dir/scope/scope.c.o CMakeFiles/ccode.dir/swap/swap.c.o CMakeFiles/ccode.dir/scope/counter.c.o CMakeFiles/ccode.dir/arrays/array.c.o CMakeFiles/ccode.dir/operators/bitwise.c.o CMakeFiles/ccode.dir/mortgageCalc/mortgage.c.o
+build ccode: C_EXECUTABLE_LINKER__ccode_Debug CMakeFiles/ccode.dir/enums/enum.c.o CMakeFiles/ccode.dir/scope/scope.c.o CMakeFiles/ccode.dir/swap/swap.c.o CMakeFiles/ccode.dir/scope/counter.c.o CMakeFiles/ccode.dir/arrays/array.c.o CMakeFiles/ccode.dir/operators/bitwise.c.o CMakeFiles/ccode.dir/mortgageCalc/mortgage.c.o CMakeFiles/ccode.dir/loops/loops.c.o CMakeFiles/ccode.dir/CBOOK/section1.c.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.0.sdk
   OBJECT_DIR = CMakeFiles/ccode.dir
   POST_BUILD = :
