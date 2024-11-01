@@ -8,4 +8,6 @@ add_executable(ccode
         scope/scope.c
         swap/swap.c
         scope/counter.c
-        arrays/array.c)
+        arrays/array.c
+        operators/bitwise.c
+        mortgageCalc/mortgage.c)
