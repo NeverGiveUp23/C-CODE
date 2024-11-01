@@ -1,0 +1,5 @@
+# ninja log v6
+2	75	1730479978699302669	CMakeFiles/ccode.dir/scope/scope.c.o	64ed0a1e7155027f
+2	35	1730480049433509747	CMakeFiles/ccode.dir/scope/counter.c.o	16e8ca97a283410
+1	76	1730479978698909169	CMakeFiles/ccode.dir/enums/enum.c.o	6060dea4c62c9519
+2	76	1730479978699549252	CMakeFiles/ccode.dir/swap/swap.c.o	70e786f2d8ad6810
