@@ -1,0 +1,3 @@
+/Users/felix/Desktop/ccode/cmake-build-debug/CMakeFiles/ccode.dir
+/Users/felix/Desktop/ccode/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/felix/Desktop/ccode/cmake-build-debug/CMakeFiles/rebuild_cache.dir
