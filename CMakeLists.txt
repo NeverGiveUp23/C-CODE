@@ -12,4 +12,6 @@ add_executable(ccode
         operators/bitwise.c
         mortgageCalc/mortgage.c
         loops/loops.c
-        CBOOK/section1.c)
+        CBOOK/section1.c
+        struct/struct.c
+        struct/struct.c)
