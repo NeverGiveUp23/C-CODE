@@ -21,7 +21,7 @@ struct {
 // only contain one object at a time
 // primarily used to save memory.
 
-union tagtest {
+union tag_test {
    struct {
      int node1;
    } n1;
@@ -42,8 +42,65 @@ struct tag {
     // TODO
 };
 
+struct tag v; // instance of struct tag
+struct tag *p;  // pointer to struct tag
+
+
+// You can think of struct tags as type names and define an alias for the tag name
+// by using the typedef.
+
+typedef struct s {
+    int x;
+} t;
+// typedef allows you to declare variables of type t instead of s.
+// this works well when you have self-ref structures that contains pointers to themselves
+
+//struct tnode {
+//    int count;
+//    struct tnode *left;
+//    struct tnode *right;
+//};
+
+//the compile may complain with the struct above
+// but you can use typedef to declare it
+
+//typedef struct tnode {
+//    int count;
+//    struct tnode *right;
+//    struct tnode *left;
+//} tnode;
+
+// you can also define the typedef before
+typedef struct tnode tnode;
+struct tnode {
+    int count;
+    tnode *right;
+    tnode *left;
+};
+
+
+// Enums
+// The names of enums and unions are also tags and not types.
+// meaning they cannot be used alone to declare a variable.
+
+enum Day {
+    Monday,
+    Tuesday,
+    Wednesday,
+    Thursday,
+    Friday,
+    Saturday,
+    Sunday
+};
+
+// Day today = Monday; // Error
+enum Day today = Monday; // Ok
+enum Day tomorrow; // Ok
+
 
 int main () {
+
+
     sigline.sigint = 5;
     strcpy(sigline.sigWord, "SIGINT");
     strcpy(sigline.sigLine, "This is from SIGLINE");
