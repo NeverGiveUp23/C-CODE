@@ -14,4 +14,5 @@ add_executable(ccode
         loops/loops.c
         CBOOK/section1.c
         struct/struct.c
-        struct/struct.c)
+        struct/struct.c
+        qualifiers/qualifier.c)
