@@ -20,4 +20,5 @@ add_executable(ccode
         memory/memmang.c
         memory/memmang.c
         controlflow/controlflow.c
-        arrays/twod.c)
+        arrays/twod.c
+        functions/functions..c)

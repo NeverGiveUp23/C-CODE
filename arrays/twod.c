@@ -23,6 +23,7 @@ int main() {
 
     printf("Years\t\tRainfall        (inches)\n");
 
+    // get the yearly average
     for (year = 0, total = 0; year < YEARS; year++){
 
         for (month = 0, subtotal = 0; month < MONTHS; ++month) {
@@ -37,6 +38,7 @@ int main() {
     printf("MONTHLY AVERAGE: \n\n");
     printf(" Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec\n");
 
+// get the monthly average
     for(month = 0; month < MONTHS; month++){
         for(year = 0, subtotal = 0; year < YEARS; year++){
             subtotal += rain[year][month];
