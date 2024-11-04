@@ -15,4 +15,8 @@ add_executable(ccode
         CBOOK/section1.c
         struct/struct.c
         struct/struct.c
-        qualifiers/qualifier.c)
+        qualifiers/qualifier.c
+        memory/memmang.c
+        memory/memmang.c
+        memory/memmang.c
+        controlflow/controlflow.c)
