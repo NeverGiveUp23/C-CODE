@@ -41,9 +41,31 @@ double gradeAvg(int numberOfGrades)
   printf("Number of failures %i\n", failureCount);
 }
 
+
+int evenOrOdd(int number){
+
+  printf("Enter a number: ");
+  scanf("%i", &number);
+
+  if (number % 2 == 0){
+    printf("Even!\n");
+  } else {
+    printf("Odd\n");
+  }
+};
+
+
 int main () {
 
+  
+  int evenNumber;
+
+  
+
+
     gradeAvg(5);
+
+    evenOrOdd(9);
 
   return 0;
 }
