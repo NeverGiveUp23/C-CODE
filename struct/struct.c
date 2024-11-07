@@ -98,8 +98,8 @@ enum Day today = Monday; // Ok
 enum Day tomorrow; // Ok
 
 
-int main () {
 
+int main () {
 
     sigline.sigint = 5;
     strcpy(sigline.sigWord, "SIGINT");
