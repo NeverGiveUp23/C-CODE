@@ -96,7 +96,7 @@ int main() {
     for(i = 0; i < 9; i++){
         printf("%i\n", array[i]);
     };
-    
+
 
     return 0;
 };
