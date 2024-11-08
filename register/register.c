@@ -30,6 +30,7 @@ double choosingItems(int choice){
   };
 
 
+
   switch (choice){
     case apple:
       choice = 1;
@@ -82,15 +83,31 @@ double choosingItems(int choice){
 int main() {
   double fullAmount;
   int choice;
+  int answer;
+  bool isStillShopping = true;
+
 
   printf("Enter your item: ");
   scanf("%i", &choice);
 
-
-  while(choice != 0 || choice != 10){
+  while (isStillShopping == true)
+  {
     choosingItems(choice);
-    break;
-  } 
-  
+    
+    printf("Are you still shopping? 1 for yes, 2 for no: ");
+    scanf("%i", &answer);
+
+    if (answer == 1 ){
+      isStillShopping;
+      printf("Enter your item: ");
+      scanf("%i", &choice);
+      fullAmount += itemAmount;
+      printf("Current Total: $%.2f\n", fullAmount);
+    } else if (answer == 2){
+      isStillShopping = false;
+      printf("Final Total: $%.2f\n", fullAmount);
+    }
+  };
+
   return 0;
 };
