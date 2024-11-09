@@ -106,9 +106,9 @@ toupper() function converts strings to uppercase
 tolower converts string to lower case
 */
 
-for(int i = 0; (text[i] = (char)toupper(text[i])) != '\0'; i++){
-  printf("%d", text[i]);
-}
+// for(int i = 0; (text[i] = (char)toupper(text[i])) != '\0'; i++){
+//   printf("%d", text[i]);
+// }
 
 return 0;
 }
