@@ -22,13 +22,13 @@ typedef enum
 
 double itemAmount;
 
+
 double choosingItems(int choice){
   char itemName[10];
 
   if(choice == 0 || choice == 10){
     return printf("Sorry not an item...\n");
   };
-
 
 
   switch (choice){
