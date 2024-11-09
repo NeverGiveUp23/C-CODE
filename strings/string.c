@@ -84,21 +84,31 @@ to store the value thats returned, you must create a variable that can store the
 
 
 // this is how you would use the function.
-char search[] = "A long walk in the park";
-char ch = 'l';
+ char search[] = "A long walk in the park";
+ char ch = 'l';
 char *pCh = NULL; // we set it to null bcus right now it will not point to anything
-pCh = strchr(search, ch); // this will find the first 'l' in the string which is in the 2 index
+ pCh = strchr(search, ch); // this will find the first 'l' in the string which is in the 2 index
 
 
 /* strstr
 the strstr() function will return the string your looking for not just the char.ch
 */
 char text[] = "my dog is the best";
-char word[] = "best";
-char *pWord = "best";
-pWord= strstr(text, word);
+ char word[] = "best";
+ char *pWord = "best";
+ pWord= strstr(text, word);
 
 
+
+/* toupper() and tolower()
+
+toupper() function converts strings to uppercase
+tolower converts string to lower case
+*/
+
+for(int i = 0; (text[i] = (char)toupper(text[i])) != '\0'; i++){
+  printf("%d", text[i]);
+}
 
 return 0;
 }
