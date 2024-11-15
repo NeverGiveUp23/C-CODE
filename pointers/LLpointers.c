@@ -6,7 +6,20 @@ struct entry {
   struct entry *next;
 };
 
+struct entry *findEntry(struct entry * listPtr, int match){
+
+      while(listPtr != (struct entry *) 0){
+        if(listPtr->value == match){
+          return (listPtr);
+        } else {
+          listPtr = listPtr->next;
+        };  
+      };
+      return (struct entry *) 0;
+};
+
 int main(){
+  struct entry *findEntry(struct entry *listPtr, int match);
   struct entry n1, n2 , n3;
   struct entry *listPointer = &n1;
     
@@ -40,6 +53,8 @@ int main(){
       printf("%i\n", listPointer->value);
       listPointer = listPointer->next;
     }
+
+    
 
 
   return 0;
