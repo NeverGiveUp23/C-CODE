@@ -91,7 +91,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "advanced/memmangegment.c",
+			"path" : "advanced/enums.c",
 			"sourceGroupIndex" : 0
 		}
 	],
