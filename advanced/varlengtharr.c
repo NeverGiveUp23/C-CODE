@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int main() {
 
+int totalSum(){
     int arrSize = 0; // for the user input and where to store it
     printf("Enter a number: ");
     scanf("%i", &arrSize); // storing user input for length of the array
@@ -31,6 +31,9 @@ int main() {
     }
 
     printf("%d", sum);
+}
 
+int main() {
+    totalSum();
   return 0;
 }
